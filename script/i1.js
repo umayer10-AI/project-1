@@ -1,6 +1,6 @@
 function pronounceWord(word) {
   const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = "en-EN"; // English
+  utterance.lang = "en-EN"; 
   window.speechSynthesis.speak(utterance);
 }
 
@@ -68,7 +68,6 @@ const detail = (p) => {
 }
 
 
-
 btn.addEventListener("click", (e) => {
     if(e.target.matches("button")){
         const b = e.target.id;
@@ -91,7 +90,6 @@ btn.addEventListener("click", (e) => {
 
             bb.classList.add("bg-primary", "text-white");
 
-            // console.log(bb);
 
         let g = async () => {
             spin(true);
@@ -99,7 +97,6 @@ btn.addEventListener("click", (e) => {
             const f = await fetch(url);
             const j = await f.json();
             const jj = j.data;
-            // console.log(j.data);
 
             const card = document.querySelector(".card");
             card.innerHTML = "";
@@ -138,8 +135,7 @@ btn.addEventListener("click", (e) => {
                 </div>`
                 card.appendChild(div);
             })
-            // let k = document.querySelector(".btn11");
-            // console.log(k);
+
             spin(false);
         }
         g();
@@ -192,21 +188,21 @@ s.addEventListener("click", () => {
 })
 
 let gg = () => {
-    const b1 = document.getElementById("1");
-            const b2 = document.getElementById("2");
-            const b3 = document.getElementById("3");
-            const b4 = document.getElementById("4");
-            const b5 = document.getElementById("5");
-            const b6 = document.getElementById("6");
-            const b7 = document.getElementById("7");
+        const b1 = document.getElementById("1");
+        const b2 = document.getElementById("2");
+        const b3 = document.getElementById("3");
+        const b4 = document.getElementById("4");
+        const b5 = document.getElementById("5");
+        const b6 = document.getElementById("6");
+        const b7 = document.getElementById("7");
 
-            b1.classList.remove("bg-primary", "text-white");
-            b2.classList.remove("bg-primary", "text-white");
-            b3.classList.remove("bg-primary", "text-white");
-            b4.classList.remove("bg-primary", "text-white");
-            b5.classList.remove("bg-primary", "text-white");
-            b6.classList.remove("bg-primary", "text-white");
-            b7.classList.remove("bg-primary", "text-white");
+        b1.classList.remove("bg-primary", "text-white");
+        b2.classList.remove("bg-primary", "text-white");
+        b3.classList.remove("bg-primary", "text-white");
+        b4.classList.remove("bg-primary", "text-white");
+        b5.classList.remove("bg-primary", "text-white");
+        b6.classList.remove("bg-primary", "text-white");
+        b7.classList.remove("bg-primary", "text-white");
 }
 
 
